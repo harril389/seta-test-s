@@ -45,14 +45,27 @@ const TestFirst = () => {
     e.preventDefault();
     var data = posts.split(",");
     var lists = [];
+    var checkData = true;
     console.log(data);
-    data.forEach((e) => {
-      lists.push(Number(e));
-    });
+    for (let i = 0; i < data.length; i++) {
+      if (Number.isNaN(Number(data[i]))) {
+        checkData = false;
+        alert(data[i] + " is not number!");
+        break;
+      } else {
+        lists.push(Number(data[i]));
+      }
+    }
+    // data.forEach((e) => {
+    //   lists.push(Number(e));
+    //   console.log(typeof Number(e));
+    // });
     console.log(lists);
-    lists.sort();
-    var result = lists[lists.length - 1] + lists[lists.length - 2];
-    alert(" sum of integers on top 2 = " + result);
+    if (checkData) {
+      lists.sort();
+      var result = lists[lists.length - 1] + lists[lists.length - 2];
+      alert(" sum of integers on top 2 = " + result);
+    }
   };
   const onChange = (e) => {
     setPosts(e.target.value);
