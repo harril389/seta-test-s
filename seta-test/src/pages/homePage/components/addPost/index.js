@@ -50,7 +50,6 @@ const AddPost = () => {
           required
           placeholder="Text..."
         />
-        {/* <input type="text" onChange={(e) => onChange(e)} name="body" required /> */}
         <div className="box-submit">
           <button type="submit" className="box-submit__button">
             post

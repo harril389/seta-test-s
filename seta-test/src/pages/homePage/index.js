@@ -29,18 +29,6 @@ const HomePage = () => {
               body={post.body}
             />
           </div>
-          // <div key={"post" + index} className="content">
-          //   <div className="box-user">
-          //     <div className="box-user__userId">User Id: {post.userId}</div>
-          //     <div className="box-user__Id"> Id post:{post.id}</div>
-          //   </div>
-          //   <div className="content__title">
-          //     <b>Title:</b> {post.title}
-          //   </div>
-          //   <div className="content__body">
-          //     <b>Body:</b> {post.body}
-          //   </div>
-          // </div>
         ))}
       </div>
     </div>
