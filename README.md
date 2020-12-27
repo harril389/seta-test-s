@@ -39,8 +39,8 @@ path: /
 
 ## 1. Get and display posts from API
 
-<img src='getData.PNG'></img>
+<img src='image/getData.PNG'></img>
 
 ## 2. Have a PostForm component to add new post
 
-<img src='postData.PNG'></img>
+<img src='image/postData.PNG'></img>
