@@ -20,7 +20,7 @@ npm i
 
 ```sh
 cd seta-test
-npm i
+npm start
 ```
 
 # Javascript algorithm
